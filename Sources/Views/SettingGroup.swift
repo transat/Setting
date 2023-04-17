@@ -16,7 +16,7 @@ public struct SettingGroup: Setting {
     public var header: String?
     public var footer: String?
     public var horizontalPadding = CGFloat(16)
-    public var backgroundColor = SettingTheme.backgroundColor
+    public var backgroundColor = SettingTheme.backgroundColor?
     public var backgroundCornerRadius = CGFloat(12)
     public var dividerLeadingMargin = CGFloat(16)
     public var dividerTrailingMargin = CGFloat(0)
@@ -28,7 +28,7 @@ public struct SettingGroup: Setting {
         header: String? = nil,
         footer: String? = nil,
         horizontalPadding: CGFloat = CGFloat(16),
-        backgroundColor: Color = SettingTheme.backgroundColor,
+        backgroundColor: Color? = SettingTheme.backgroundColor,
         backgroundCornerRadius: CGFloat = CGFloat(12),
         dividerLeadingMargin: CGFloat = CGFloat(16),
         dividerTrailingMargin: CGFloat = CGFloat(0),
